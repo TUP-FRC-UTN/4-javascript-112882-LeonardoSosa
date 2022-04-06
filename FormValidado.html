@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--meta para adaptar el ancho de la pagina al dispositivo
+    para hacerlo responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Formulario de Inscripción</title>
+</head>
+
+<!-- HEADER -->
+
+<body>
+    <div class="container-fluid bg-primary py-5">
+        <div class="row">
+            <div class="col-md-12 mb-6 container text-white text-center">
+                <h1 class="display-3">Bienvenidos</h1>
+                <p class="lead">
+                    Formulario de Inscripción
+                </p>
+            </div>
+            <div class="col-md-12 mb-6 text-center">
+                <img src="/Imagenes/logo iicana simple.png" class="img-fluid rounded-circle
+                    w-50">
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <!-- FORMULARIO -->
+    <form class="needs-validation container" novalidate>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese su Nombre" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationTooltip02">Apellido</label>
+                <input type="text" class="form-control" id="txtApellido" placeholder="Ingrese su Apellido" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+            <div class="form-row container-fluid">
+                <div class="col-md-12 mb-3">
+                    <label for="validationTooltip02">Email</label>
+                    <input type="text" class="form-control" id="txtEmail" placeholder="Ingrese su Email" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationTooltip03">País</label>
+                <input type="text" class="form-control" id="txtPais" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationTooltip04">Ciudad</label>
+                <select class="custom-select" id="cboCiudad" required>
+                    <option selected disabled value="">Seleccione...</option>
+                    <option>Córdoba</option>
+                    <option>Tucumán</option>
+                    <option>Buenos Aires</option>
+                    <option>Tierra del Fuego</option>
+                </select>
+                <div class="invalid-tooltip">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationTooltip05">Código Postal</label>
+                <input type="text" class="form-control" id="txtCodigoPostal" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid zip.
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <button class="btn btn-success" onclick="validarForm()" type="submit">Guardar</button>
+            <button class="btn btn-primary" onclick="guardarDatos()" type="submit">Enviar</button>
+            <button class="btn btn-danger" type="reset">Borrar</button>
+        </div>
+    </form>
+
+
+    <!--JAVA SCRIPTS -->
+    <script>
+        function validarForm() {
+            var txtNombre = document.getElementById("txtNombre");
+            var txtApellido = document.getElementById("txtApellido");
+            var txtEmail = document.getElementById("txtEmail");
+            var txtPais = document.getElementById("txtPais");
+            var cboCiudad = document.getElementById("cboCiudad");
+            var txtCodigoPostal = document.getElementById("txtCodigoPostal");
+
+            if (txtNombre.value == "") {
+                alert("Debe ingresar el Nombre...")
+                return false;
+            }
+            if (txtApellido.value == "") {
+                alert("Debe ingresar el Apellido...")
+                return false;
+            }
+            if (txtEmail.value == "") {
+                alert("Debe ingresar un correo Eletrónico...")
+                return false;
+            }
+            else if (txtPais.value.length < 2) {
+                alert("El campo País debe ser mayor a 2 caracteres...")
+                return false;
+            }
+            else if (txtPais.value.length > 100) {
+                alert("El campo País no debe ser mayor a 100 caracteres...")
+                return false;
+            }
+            if (cboCiudad.value == "") {
+                alert("Debe seleccionar una Ciudad...")
+                return false;
+            }
+            if (txtCodigoPostal.value == "") {
+                alert("Debe ingresar un Código Postal...")
+                return false;
+            }
+
+            return true;
+        }
+
+        function guardarDatos() {
+            if (validarForm == true) {
+                alert("Cliente Registrado!");
+            }
+            else {
+                alert("Error de Validación");
+                return false;
+            }
+        }
+    </script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

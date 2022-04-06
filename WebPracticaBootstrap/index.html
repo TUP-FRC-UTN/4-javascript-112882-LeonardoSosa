@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--FONT AWESOME PARA LOS ICONOS-->
+    <script src="https://kit.fontawesome.com/e507634858.js" crossorigin="anonymous"></script>
+
+    <!-- Css Editado -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>IICANA Jardín Botánico</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo iicana pequenio2.png" alt="Fazt" style="width: 100%;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Cursos de Inglés</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Exámenes Internacionales</a>
+                        </li>
+                        <li class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <a class="nav-link active" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Nuestras Sedes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Más Información</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Escriba algo..."
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- CAROUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>                
+        </div>  
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/WebPracticaBootstrap/img/iicanaPortada.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/WebPracticaBootstrap/img/portada2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/WebPracticaBootstrap/img/portada 3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!-- NEWSLETTER -->
+    <section class="bg-light text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control form-control-lg" placeholder="Ingrese su Nombre">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control form-control-lg" placeholder="Ingrese su Email">
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-primary btn-lg btn-block">
+                        Suscribime
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CURSOS-->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card text-center border-primary">
+                        <div class="card-body">
+                            <h3>Cursos para Niños</h3>
+                            <p>👧🏻👦🏻
+                                A los niños y niñas los agrupamos por edad y por nivel. Tenemos niveles Preparatorio B y
+                                Niños del 1 al 4.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center bg-primary text-white">
+                        <div class="card-body">
+                            <h3>Cursos para Adolescentes</h3>
+                            <p>👩🏻🧑🏻Cursan 2 veces por semana con 1.30 hora por clase. Cursos regulares en el caso
+                                que tenga conocimientos previos de inglés. Presenciales 100%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center border-primary">
+                        <div class="card-body">
+                            <h3>Cursos para Adultos</h3>
+                            <p>👨🏻👩🏼‍🦱
+                                En primera instancia, si tenes algo de nivel de inglés, se hace un examen de ubicación,
+                                (se envía al correo, debe ser gmail) en base al resultado que de es el nivel en el que
+                                empezarías.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center bg-primary text-white">
+                        <div class="card-body">
+                            <h3>Cursos Blended</h3>
+                            <p>🖥️🖱️
+                                Modalidad: 100% online Son 6 niveles semi intensivos que duran 4 meses cada uno y se
+                                hacen 2 niveles por año. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--POR QUE ELEGIRNOS?-->
+    <section class="container text-center p-5">
+        <div class="row">
+            <div class="">
+                <h3>Por qué Elegirnos?</h3>
+                <p>Nuestros cursos de Inglés ponen énfasis en la comunicación, ya que este idioma es fundamental en
+                    el ámbito de los viajes, los negocios y las nuevas tecnologías.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--PREGUNTAS FRECUENTES-->
+    <section class="container text-center p-5">
+        <div class="row">
+            <h3>Preguntas Frecuentes</h3>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Como saber mi nivel de inglés para empezar a cursar?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Se realiza un exámen de ubicación/nivelación.</strong>
+                            Para conocer su nivel, y en base a eso ubicarlos en el curso correspondiente.
+                            <code>El examen no tiene ningún costo y tiene una duración aproximada de 15/20 min. No lleva nota, es solo para conocer su nivel.</code>
+                            Podés realizarlo de forma presencial o virtual mediante un Google Form.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Horarios
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Contamos con tres franjas horarias por la tarde.</strong>
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">15:00 a 16:30hs</li>
+                                <li class="list-group-item">16:45 a 18:15hs</li>
+                                <li class="list-group-item">18:30 a 20hs</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Nuestas Ubicaciones
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Av. República de China 1151 - Piso 1 Locales 15 a 18 Valle
+                                    Mall</li>
+                                <li class="list-group-item">Av. República de China 1400- ACAECE- Local 17.2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section class="bg-primary text-center">
+        <div class="container p-1">
+            <h1 class="text-white">Team</h1>
+            <p class="text-white">
+                Les recordamos:
+                <br> ✅Nuestros horarios de atención del mes de Febrero: Lunes a Viernes de 16:00 a 20:30 hs.
+                <br> ✅El inicio de clases esta programado para el día 7 de Marzo.
+                <br> ✅Matricularse para confirmar horarios (por la disponibilidad de alumnos por curso).
+            </p>
+            <div class="row">
+                <!--TARJETAS-->
+                <!--PRIMERA TARJETA-->
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/logo iicana simple.png" class="img-fluid rounded-circle
+                            w-50" alt="Person One">
+                            <h3>Leonardo Sosa</h3>
+                            <p>Administrativo General</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="https://www.facebook.com/IICANAJARDINBOTANICO" target="_blank">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="https://www.instagram.com/iicanajardinbotanico/" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="https://www.linkedin.com/in/leonardososa91/" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--SEGUNDA TARJETA-->
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/logo iicana simple.png" class="img-fluid rounded-circle
+                        w-50" alt="Person One">
+                            <h3>Yanina Caffaratti</h3>
+                            <p>Directora General</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="https://www.facebook.com/IICANAJARDINBOTANICO" target="_blank">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="https://www.instagram.com/iicanajardinbotanico/" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="https://www.linkedin.com/in/leonardososa91/" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--TERCERA TARJETA-->
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/logo iicana simple.png" class="img-fluid rounded-circle
+                        w-50" alt="Person One">
+                            <h3>Maria Caffaratti</h3>
+                            <p>Recepcionista</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="https://www.facebook.com/IICANAJARDINBOTANICO" target="_blank">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="https://www.instagram.com/iicanajardinbotanico/" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="https://www.linkedin.com/in/leonardososa91/" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--CUARTA TARJETA-->
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/logo iicana simple.png" class="img-fluid rounded-circle
+                        w-50" alt="Person One">
+                            <h3>Paula Monier</h3>
+                            <p>Coordinadora</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="https://www.facebook.com/IICANAJARDINBOTANICO" target="_blank">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="https://www.instagram.com/iicanajardinbotanico/" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="https://www.linkedin.com/in/leonardososa91/" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h3>Contacto</h3>
+                    <p>Enviénos su consulta, será respondida a la brevedad.</p>
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fas fa-user input-group-text"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fa-solid fa-phone input-group-text"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Teléfono" aria-label="Phone"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fa-solid fa-pencil input-group-text"></i></span>
+                            </div>
+                            <textarea cols="30" rows="10" placeholder="Escribe tu consulta aquí"
+                                class="form-control"></textarea>
+                        </div>
+                        <button class="btn btn-primary btn-lg btn-block">Enviar!</button>
+                    </form>
+                </div>
+                <div class="col-lg-3 align-self-center">
+                    <img src="img/logo iicana simple.png" class="img-fluid rounded-circle
+                w-80" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container p-3 bg-primary text-white text-center">
+            <p>Copyright &copy; 2022 - Leonardo Sosa</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
